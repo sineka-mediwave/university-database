@@ -1,0 +1,108 @@
+INSERT INTO public.course_subjects () VALUES
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 ();
+INSERT INTO public.course_subjects () VALUES
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 ();
+INSERT INTO public.course_subjects () VALUES
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 ();
+INSERT INTO public.course_subjects () VALUES
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 ();
+INSERT INTO public.course_subjects () VALUES
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 ();
+INSERT INTO public.course_subjects () VALUES
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 ();
+INSERT INTO public.course_subjects () VALUES
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 ();
+INSERT INTO public.course_subjects () VALUES
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 ();
+INSERT INTO public.course_subjects () VALUES
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 ();
+INSERT INTO public.course_subjects () VALUES
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 (),
+	 ();
