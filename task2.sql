@@ -75,7 +75,7 @@ where ranking =1;
 select s.subject_name , count (em.candidate) as no_of_failed_students
 from subjects s
 inner join exam_marks em on em.subjects = s.subject_id 
-where em.marks <35
+where marks between 0 and 40
 group by s.subject_name 
 
 

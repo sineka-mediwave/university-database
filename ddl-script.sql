@@ -1,5 +1,5 @@
 -- DDL scripts
-CREATE TABLE university (university_id SERIAL primary key not null, university_name VARCHAR not null);
+--CREATE TABLE university (university_id SERIAL primary key not null, university_name VARCHAR not null);
 CREATE TABLE colleges (college_id SERIAL PRIMARY KEY NOT NULL, college_name VARCHAR NOT NULL);
 CREATE TABLE courses(course_id SERIAL PRIMARY KEY NOT NULL, course_name VARCHAR NOT NULL);
 CREATE TABLE subjects(subject_id SERIAL PRIMARY KEY NOT NULL, subject_name VARCHAR NOT NULL);
@@ -40,7 +40,11 @@ exam_id SERIAL primary key not null,
 candidate SERIAL references students(stid),
 subjects SERIAL references course_subjects(course_subjects_id),
 semester SERIAL references semesters(sem_id),
-marks VARCHAR
+marks INTEGER
 );
 
---drop table exam_marks 
+
+
+
+
+
