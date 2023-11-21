@@ -1,19 +1,18 @@
 -- DML scripts
 
-insert into university (university_name) values ('Anna University'), ('Pondicherry University');
-
-insert into colleges (college_name, university) values 
-('St. Joseph College of Engineering and Technology', 1), 
-('CK College of Engineering and Technology', 1),
-('KrishnaSamy College of Engineering and Technology',1),
-('St.Anne''s College of Engineering and Technology',1),
-('Excel College of Engineering and Technology',1),
-('Rajiv Gandhi College of Engineering and Technology', 2)
+insert into colleges (college_name) values 
+('St. Joseph College of Engineering and Technology'), 
+('CK College of Engineering and Technology'),
+('KrishnaSamy College of Engineering and Technology'),
+('St.Anne''s College of Engineering and Technology'),
+('Excel College of Engineering and Technology'),
+('Rajiv Gandhi College of Engineering and Technology')
 
 insert into courses (course_name) values 
 ('Computer Science Engineering'), ('Mechanical Engineering'),
-('Electronics and Communication Engineering'), ('Marine Engineering'),
-('Electrical and Electronics Engineering'), ('Aeronautical Engineering'),
+('Electronics and Communication Engineering'),
+('Electrical and Electronics Engineering'), ('Marine Engineering'),
+ ('Aeronautical Engineering'),
 ('Mectronics Engineering'), ('Bio-Chemical Engineering'), ('Manufacturing Engineering'),
 ('Design Engineering'), ('Civil Engineering')
 
@@ -154,26 +153,34 @@ insert into students (stname, batch, dob, address, course, college) values
 
 -- students marks for apr 2023
 insert into exam_marks (candidate, subjects, semester, marks) values 
-(94,1,1,96), (94,2,1,87), (94,3,1,97), (94,6,1,89), (94,27,1,95),
-(188,1,1,76), (188,2,1,65), (188,3,1,45), (188,6,1,85), (188,27,1,82),
-(119,1,1,78), (119,2,1,63), (119,3,1,74), (119,6,1,65),(119,27,1,36),
-(187,1,1,92), (187,2,1,51), (187,3,1,84), (187,6,1,93), (187,27,1,85),
-(186,1,1,72), (186,2,1,93), (186,3,1,57), (186,6,1,79), (186,27,1,85),
-(189, 1, 1, 95),
-(189, 2, 1, 6),
-(189, 3, 1, 54),
-(189, 6, 1, 86),
-(189, 27, 1, 35),
-(185, 1, 1, 75),
-(185, 2, 1, 14),
-(185, 3, 1, 36),
-(185, 6, 1, 13),
-(185, 27, 1, -1)
+(1,1,1,96), (1,2,1,87), (1,3,1,97), (1,6,1,89), (1,27,1,95),
+(4,1,1,76), (4,2,1,65), (4,3,1,45), (4,6,1,85), (4,27,1,82),
+(5,1,1,78), (5,2,1,63), (5,3,1,74), (5,6,1,65),(5,27,1,36),
+(7,1,1,92), (7,2,1,51), (7,3,1,84), (7,6,1,93), (7,27,1,85),
+(93,1,1,72), (93,2,1,93), (93,3,1,57), (93,6,1,79), (93,27,1,85)
+
 
 
 insert into exam_marks (candidate, subjects, semester, marks) values 
-(100, 1, 1, 56),
-(100, 2, 1, 71),
-(100, 3, 1, 64),
-(100, 6, 1, 69),
-(100, 27, 1, 74)
+(94, 1, 1, 95),
+(94, 2, 1, 6),
+(94, 3, 1, 54),
+(94, 6, 1, 86),
+(94, 27, 1, 35),
+(95, 1, 1, 75),
+(95, 2, 1, 14),
+(95, 3, 1, 36),
+(95, 6, 1, 13),
+(95, 27, 1, -1),
+(96, 1, 1, 56),
+(96, 2, 1, 71),
+(96, 3, 1, 64),
+(96, 6, 1, 69),
+(96, 27, 1, 74)
+
+insert into exam_marks (candidate, subjects, semester, marks) values 
+(94, 1, 1, 95),
+(94, 2, 1, 6),
+(94, 3, 1, 54),
+(94, 6, 1, 86),
+(94, 27, 1, 35)

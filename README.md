@@ -37,7 +37,12 @@ Querys
 - delete a college and its respective things
 - alter all the tables add audit columns (createdAt,createBy,updatedAt,updatedBy)
 - remove the duplicate values in the mark table(insert values for your convenient)
+  [methods-to-delete] (https://www.postgresqltutorial.com/postgresql-tutorial/how-to-delete-duplicate-rows-in-postgresql/)
 
 ## Reference
 
 - [delete-duplicate-rows](https://www.simplilearn.com/tutorials/sql-tutorial/delete-duplicate-rows-in-sql)
+
+- [add-more-columns] (https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-add-column/)
+- [methods-to-delete] (https://www.postgresqltutorial.com/postgresql-tutorial/how-to-delete-duplicate-rows-in-postgresql/)
+- [task-3-alter-table](https://www.postgresql.org/docs/current/sql-altertable.html)

@@ -1,22 +1,19 @@
 -- DDL scripts
---CREATE TABLE university (university_id SERIAL primary key not null, university_name VARCHAR not null);
+
 CREATE TABLE colleges (college_id SERIAL PRIMARY KEY NOT NULL, college_name VARCHAR NOT NULL);
 CREATE TABLE courses(course_id SERIAL PRIMARY KEY NOT NULL, course_name VARCHAR NOT NULL);
 CREATE TABLE subjects(subject_id SERIAL PRIMARY KEY NOT NULL, subject_name VARCHAR NOT NULL);
- 
---CREATE TABLE college_courses (college_course_id SERIAL PRIMARY KEY NOT NULL, college_id SERIAL REFERENCES colleges(college_id));
---ALTER table college_courses ADD COLUMN course_id SERIAL references courses(course_id);
 
 CREATE TABLE college_courses (
 college_course_id SERIAL PRIMARY KEY NOT NULL, 
-college_id SERIAL REFERENCES colleges(college_id)
-course_id SERIAL REFERENCES courses(course_id), 
-);
+college_id SERIAL REFERENCES colleges(college_id) on delete cascade,
+course_id SERIAL REFERENCES courses(course_id) on delete cascade 
+)
 
 CREATE TABLE course_subjects (
 course_subjects_id SERIAL PRIMARY KEY NOT NULL,  
-subject_id SERIAL REFERENCES subjects(subject_id),
-course SERIAL REFERENCES courses(course_id);
+subject_id SERIAL REFERENCES subjects(subject_id) on delete cascade,
+course SERIAL REFERENCES courses(course_id) on delete cascade;
 );
 
 create table students (
@@ -25,8 +22,8 @@ stname VARCHAR,
 batch date,
 dob date,
 address VARCHAR,
-course SERIAL REFERENCES courses(course_id),
-college SERIAL REFERENCES colleges(college_id),
+course SERIAL REFERENCES courses(course_id) on delete cascade,
+college SERIAL REFERENCES colleges(college_id) on delete cascade
 );
 
 create table semesters (
@@ -37,15 +34,9 @@ sem_month VARCHAR
 
 create table exam_marks(
 exam_id SERIAL primary key not null,
-candidate SERIAL references students(stid),
-subjects SERIAL references course_subjects(course_subjects_id),
-semester SERIAL references semesters(sem_id),
+candidate SERIAL references students(stid) on delete cascade,
+subjects SERIAL references course_subjects(course_subjects_id) on delete cascade,
+semester SERIAL references semesters(sem_id) on delete cascade,
 marks INTEGER
 );
-
-
-
-
-
-
 
